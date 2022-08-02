@@ -15,13 +15,13 @@ $lg: 1200px;
 }
 
 @mixin for-medium {
-  @media screen and (min-width: $md) and (max-width: $lg - 1) {
+  @media screen and (orientation: landscape) and (min-width: $md) and (max-width: $lg - 1) {
     @content;
   }
 }
 
 @mixin for-large {
-  @media screen and (min-width: $lg) {
+  @media screen and (orientation: landscape) and (min-width: $lg) {
     @content;
   }
 }
