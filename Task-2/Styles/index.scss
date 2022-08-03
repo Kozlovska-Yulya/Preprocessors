@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+.container {
+  display: flex;
 }
 .square {
   width: 100px;
@@ -26,5 +29,11 @@
 
   @include for-large {
     background-color: #c47;
+  }
+}
+
+.container {
+  @include for-extra-small {
+    flex-direction: column;
   }
 }

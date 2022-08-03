@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.container {
+  display: flex;
 }
 
 .square {
@@ -28,6 +32,12 @@
 @media screen and (min-width: 1200px) {
   .square {
     background-color: #c47;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
   }
 }
 
