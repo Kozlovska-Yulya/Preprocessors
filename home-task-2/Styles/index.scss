@@ -1,0 +1,22 @@
+@import 'layout.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana;
+}
+
+@include for-media {
+  .products {
+    display: flex;
+    flex: 2;
+  }
+}
+
+@include for-large {
+  .content {
+    display: flex;
+  }
+}
