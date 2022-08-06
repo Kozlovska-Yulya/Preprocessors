@@ -6,9 +6,9 @@
 
 .menu {
   padding: 0;
-  margin-left: 3em;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 3em;
   text-transform: uppercase;
   display: flex;
   list-style-type: none;
