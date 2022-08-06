@@ -10,6 +10,12 @@ $fourth-color: #faebd7;
 $unit: 8px;
 $border-radius: 4px;
 
+@mixin for-small {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
 @mixin for-media {
   @media screen and (min-width: $sm) {
     @content;
