@@ -1,8 +1,9 @@
 @import 'variables.scss';
 
 .header {
-  height: 3em;
+  line-height: 3em;
   background-color: $color-primary;
+  position: relative;
 }
 
 .menu {
@@ -27,6 +28,10 @@
 .menu__item_active {
   color: $color-yellow;
 }
+
+.menu__item_active:hover .submenu {
+  display: block;
+}
 .submenu {
   position: absolute;
   margin: 0;
@@ -37,9 +42,10 @@
   color: $color-white;
   min-width: $unit * 15;
   z-index: 1;
+  display: none;
 
   &__item {
-    padding: $unit;
+    padding: 0 $unit;
   }
 
   &__item:hover {
